@@ -51,13 +51,13 @@ Each record includes synchronized sensor readings with:
 
 - **Participants:**  
   - Data collected from **5 volunteers** following a structured strength training program.
-## 3. Related Work
+## 4. Related Work
 
 This project is inspired by and built upon several influential studies in the fields of **Human Activity Recognition (HAR)**, **fitness analytics**, and **wearable sensor–based machine learning**. The following works provide important methodological and empirical foundations.
 
 ---
 
-### 3.1 Intelligent Fitness Data Analysis and Training Effect Prediction  
+### 4.1 Intelligent Fitness Data Analysis and Training Effect Prediction  
 **Paper:** *Intelligent Fitness Data Analysis and Training Effect Prediction Based on Machine Learning Algorithms*
 
 **Models & Approach**
@@ -79,7 +79,7 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
-### 3.2 Activity Recognition using Smartphone and Smartwatch Sensors (WISDM)  
+### 4.2 Activity Recognition using Smartphone and Smartwatch Sensors (WISDM)  
 **Authors:** Kwapisz et al.  
 **Source:** ACM SIGKDD Explorations / IEEE Access / UCI WISDM Dataset
 
@@ -110,7 +110,7 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
-### 3.3 A User-Adaptive Algorithm for Activity Recognition and Repetition Counting
+### 4.3 A User-Adaptive Algorithm for Activity Recognition and Repetition Counting
 
 **Models & Approach**
 - Introduces a **user-adaptive HAR framework**:
@@ -131,7 +131,7 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
-### 3.4 Physical Activity Monitoring using the PAMAP2 Dataset
+### 4.4 Physical Activity Monitoring using the PAMAP2 Dataset
 
 **Models & Approach**
 - Preprocessing: interpolation, noise filtering, outlier removal
@@ -153,7 +153,7 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
-### 3.5 RecGym: Gym Workouts Recognition Dataset  
+### 4.5 RecGym: Gym Workouts Recognition Dataset  
 **Authors:** Ceriani et al.  
 **Source:** Sensors (MDPI), 2020
 
@@ -180,13 +180,13 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
-## 4. Model Selection and Motivation
+## 5. Model Selection and Motivation
 
 To ensure a fair and comprehensive evaluation, multiple machine learning models were implemented in this project. Each model serves a specific purpose and provides insight into different aspects of the feature space and data characteristics.
 
 ---
 
-### 4.1 Naive Bayes (NB) – Probabilistic Baseline
+### 5.1 Naive Bayes (NB) – Probabilistic Baseline
 
 **Reason for Use:**  
 Naive Bayes is a simple probabilistic classifier with very few hyperparameters. It is primarily used as a baseline model to verify whether the extracted features contain meaningful information.
@@ -198,7 +198,7 @@ Naive Bayes is a simple probabilistic classifier with very few hyperparameters. 
 
 ---
 
-### 4.2 K-Nearest Neighbors (KNN) – Distance-Based Classification
+### 5.2 K-Nearest Neighbors (KNN) – Distance-Based Classification
 
 **Reason for Use:**  
 KNN is included to evaluate the discriminative power of the feature space based on distance metrics rather than learned parameters.
@@ -210,7 +210,7 @@ KNN is included to evaluate the discriminative power of the feature space based 
 
 ---
 
-### 4.3 Decision Tree (DT) – Interpretable Decision Rules
+### 5.3 Decision Tree (DT) – Interpretable Decision Rules
 
 **Reason for Use:**  
 Decision Trees provide an interpretable model capable of capturing non-linear decision boundaries. Their rule-based structure makes them easy to understand and visualize.
@@ -222,7 +222,7 @@ Decision Trees provide an interpretable model capable of capturing non-linear de
 
 ---
 
-### 4.4 Random Forest (RF) – Robust Ensemble Model
+### 5.4 Random Forest (RF) – Robust Ensemble Model
 
 **Reason for Use:**  
 Random Forest is an ensemble method that aggregates multiple decision trees to improve generalization and reduce variance.
@@ -234,7 +234,7 @@ Random Forest is an ensemble method that aggregates multiple decision trees to i
 
 ---
 
-### 4.5 Neural Network (MLP) – General Nonlinear Modeling
+### 5.5 Neural Network (MLP) – General Nonlinear Modeling
 
 **Reason for Use:**  
 A Multi-Layer Perceptron (MLP) is used to evaluate whether a general non-linear model can outperform traditional tree-based approaches.
@@ -246,7 +246,7 @@ A Multi-Layer Perceptron (MLP) is used to evaluate whether a general non-linear 
 
 ---
 
-### 4.6 Why Multiple Models Are Used
+### 5.6 Why Multiple Models Are Used
 
 Using multiple machine learning models is essential for a reliable and unbiased evaluation.
 
