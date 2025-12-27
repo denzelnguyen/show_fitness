@@ -180,12 +180,3 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
-### 3.6 Summary and Motivation
-
-Across all reviewed studies:
-- **Random Forest consistently demonstrates strong robustness and accuracy**
-- Feature-based ML pipelines remain effective for IMU-based activity recognition
-- Sensor fusion and dimensionality reduction (PCA) significantly enhance performance
-- Repetition counting can be reliably achieved using signal peak analysis
-
-These findings directly motivate the model selection and methodology adopted in this project.
