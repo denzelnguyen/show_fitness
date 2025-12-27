@@ -57,7 +57,7 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
-### 3.1 [Intelligent Fitness Data Analysis and Training Effect Prediction][https://www.preprints.org/manuscript/202506.0753]  
+### 3.1 [[Intelligent Fitness Data Analysis and Training Effect Prediction](https://www.preprints.org/manuscript/202506.0753)]  
 **Paper:** *Intelligent Fitness Data Analysis and Training Effect Prediction Based on Machine Learning Algorithms*
 
 **Models & Approach**
