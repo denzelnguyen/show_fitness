@@ -57,7 +57,7 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
-### 3.1 [Intelligent Fitness Data Analysis and Training Effect Prediction](https://www.preprints.org/manuscript/202506.0753)  
+### 3.1 Intelligent Fitness Data Analysis and Training Effect Prediction  
 **Paper:** *Intelligent Fitness Data Analysis and Training Effect Prediction Based on Machine Learning Algorithms*
 
 **Models & Approach**
@@ -67,7 +67,7 @@ This project is inspired by and built upon several influential studies in the fi
   - **Naive Bayes (NB):** Serves as a lightweight baseline for speed comparison.
 - Workflow follows a classical pipeline of **signal preprocessing, feature extraction, and classification**, similar to this project.
 
-**Dataset**
+**Dataset** [link](https://www.kaggle.com/datasets/uciml/human-activity-recognition-with-smartphones)
 - Collected from wearable devices (smartwatches / IMU sensors).
 - Time-series data including **3-axis accelerometer** and **heart rate signals**.
 - Activities include running, cycling, squats, and push-ups.
@@ -94,7 +94,7 @@ This project is inspired by and built upon several influential studies in the fi
   - Random Forest
   - Support Vector Machine
 
-**Dataset**
+**Dataset** [link](https://archive.ics.uci.edu/dataset/507/wisdm+smartphone+and+smartwatch+activity+and+biometrics+dataset)
 - **WISDM Dataset**
 - 51 participants, 18 activities
 - Dual-device setup:
@@ -119,7 +119,7 @@ This project is inspired by and built upon several influential studies in the fi
   - **Multivariate Gaussian models** for activity intensity classification
 - Includes probability-based fall detection.
 
-**Dataset**
+**Dataset**[link](https://archive.ics.uci.edu/dataset/319/mhealth+dataset)
 - IMU sensor data (accelerometer-based)
 - Activities grouped by intensity: light, moderate, vigorous
 - Multi-user dataset for adaptability evaluation
@@ -139,7 +139,7 @@ This project is inspired by and built upon several influential studies in the fi
 - **PCA** applied for dimensionality reduction
 - Classification using Naive Bayes, SVM, and Random Forest
 
-**Dataset**
+**Dataset**[link](https://archive.ics.uci.edu/dataset/231/pamap2+physical+activity+monitoring)
 - **PAMAP2 Dataset (UCI)**
 - 9 participants
 - 3 IMUs (wrist, chest, ankle) + heart rate monitor
@@ -167,7 +167,7 @@ This project is inspired by and built upon several influential studies in the fi
 - Classification using Random Forest (primary) and SVM
 - Repetition counting via peak detection and zero-crossing analysis
 
-**Dataset**
+**Dataset**[link](https://archive.ics.uci.edu/dataset/1128/recgym:+gym+workouts+recognition+dataset+with+imu+and+capacitive+sensor-7)
 - **RecGym Dataset**
 - 10 participants
 - Exercises: Squat, Bench Press, Arm Curl, Leg Curl, etc.
