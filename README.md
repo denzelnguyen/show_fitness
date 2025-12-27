@@ -1,30 +1,53 @@
-1. Problem Description
-- This project aims to build a machine learning–based activity recognition system using motion sensor data collected from Inertial Measurement Units (IMU), specifically accelerometers and gyroscopes.
-- The system analyzes time-series signals from 3-axis accelerometer and gyroscope sensors to automatically classify different sports and exercise activities, such as walking, running, squatting, and strength-training movements. A trained machine learning model is used to learn patterns in these signals and make activity predictions.
-- The main objective is to simulate features commonly found in smart wearable devices (e.g., smartwatches), including automatic exercise detection and repetition counting. This project aligns with the concept of Quantified Self, where personal sensor data is leveraged to monitor, analyze, and improve physical activity and lifestyle habits.
+# Sports & Exercise Activity Recognition Using IMU Sensor Data
 
-2. Dataset Description
-2.1 Data Source
-- Dataset Name: MetaMotion Sensor Dataset
-- Data Format: CSV 
-- Each CSV file contains synchronized sensor readings recorded over time during physical activities.
-2.2 Sensor Data Structure
-- Each data file includes the following fields:
-    + epoch (ms): Timestamp in milliseconds, used to precisely synchronize data from multiple sensors.
-    + time: Human-readable date and time indicating when the data was recorded.
-    + elapsed (s): Time in seconds since the start of the recording session.
-    + Accelerometer (acc) – x, y, z (g): Measures linear acceleration along three axes using gravitational force units (g).
-    + Gyroscope (gyro) – x, y, z (deg/s):
-    + Measures angular velocity (rotational motion) along three axes in degrees per second.
-2.3 Activities and Participants
-- Tracked Activities:
-    + Bench Press
-    + Deadlift
-    + Overhead Press
-    + Squat
-    + Walking
-    + Running
-- Participants: Data was collected from 5 volunteers following a structured and professional strength training program.
+## 1. Introduction
 
+This repository contains the final project for the course **Human Activity Recognition & Machine Learning**.  
+The goal is to develop an automatic activity recognition system using **IMU motion sensor data** (accelerometer & gyroscope), capable of classifying and counting physical activities such as walking, running, squatting, and strength exercises.
 
+This work simulates features found in smart wearable devices (e.g., smartwatches) for **automatic exercise detection** and **repetition counting**, supporting the concept of **Quantified Self** — leveraging personal data to better understand and improve physical activity habits.
 
+---
+
+## 2. Problem Statement
+
+Human activity recognition (HAR) from wearable sensors plays an important role in health monitoring, sports analytics, and personalized fitness tracking.
+
+The system analyzes time-series signals from 3-axis accelerometer and gyroscope sensors to automatically distinguish between different labeled activities using a trained machine learning model.
+
+Key objectives:
+
+1. Collect and preprocess sensor time-series data.
+2. Train a classification model to recognize activity types.
+3. Evaluate model performance on held-out test data.
+4. Support activity counting for repetitive movement exercises.
+
+---
+
+## 3. Dataset
+
+### 3.1 Data Source  
+- **Primary Sensor:** MetaMotion Sensor  
+- **Data Format:** CSV (Comma-Separated Values)
+
+Each record includes synchronized sensor readings with:
+
+| Field            | Description                                                |
+|------------------|------------------------------------------------------------|
+| `epoch (ms)`     | Timestamp in milliseconds for synchronization              |
+| `time`           | Human-readable date and time of capture                    |
+| `elapsed (s)`    | Duration (seconds) since the start of recording            |
+| `acc_x/y/z (g)`  | 3-axis accelerometer readings (G-force units)              |
+| `gyro_x/y/z (º/s)` | 3-axis gyroscope readings (degrees per second)          |
+
+### 3.2 Activities & Participants  
+- **Tracked Activities:**  
+  - Bench press  
+  - Deadlift  
+  - Overhead press  
+  - Squat  
+  - Walking  
+  - Running
+
+- **Participants:**  
+  - Data collected from **5 volunteers** following a structured strength training program.
