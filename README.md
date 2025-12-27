@@ -180,3 +180,81 @@ This project is inspired by and built upon several influential studies in the fi
 
 ---
 
+## 4. Model Selection and Motivation
+
+To ensure a fair and comprehensive evaluation, multiple machine learning models were implemented in this project. Each model serves a specific purpose and provides insight into different aspects of the feature space and data characteristics.
+
+---
+
+### 4.1 Naive Bayes (NB) – Probabilistic Baseline
+
+**Reason for Use:**  
+Naive Bayes is a simple probabilistic classifier with very few hyperparameters. It is primarily used as a baseline model to verify whether the extracted features contain meaningful information.
+
+**Role in the Project:**  
+- Acts as a reference point for performance comparison  
+- Helps identify whether strong feature dependencies exist  
+- Poor performance indicates complex, non-independent feature relationships
+
+---
+
+### 4.2 K-Nearest Neighbors (KNN) – Distance-Based Classification
+
+**Reason for Use:**  
+KNN is included to evaluate the discriminative power of the feature space based on distance metrics rather than learned parameters.
+
+**Role in the Project:**  
+- Checks whether activities form well-separated clusters in feature space  
+- Evaluates feature quality without assuming a parametric model  
+- Sensitive to feature scaling and noise, providing insight into preprocessing effectiveness
+
+---
+
+### 4.3 Decision Tree (DT) – Interpretable Decision Rules
+
+**Reason for Use:**  
+Decision Trees provide an interpretable model capable of capturing non-linear decision boundaries. Their rule-based structure makes them easy to understand and visualize.
+
+**Role in the Project:**  
+- Helps interpret which features are most influential  
+- Serves as a comparison point for Random Forest to analyze overfitting  
+- Provides transparency for model behavior analysis
+
+---
+
+### 4.4 Random Forest (RF) – Robust Ensemble Model
+
+**Reason for Use:**  
+Random Forest is an ensemble method that aggregates multiple decision trees to improve generalization and reduce variance.
+
+**Role in the Project:**  
+- Serves as the **primary model** due to its robustness and strong performance  
+- Handles noisy sensor data effectively  
+- Consistently achieves the best accuracy across experiments
+
+---
+
+### 4.5 Neural Network (MLP) – General Nonlinear Modeling
+
+**Reason for Use:**  
+A Multi-Layer Perceptron (MLP) is used to evaluate whether a general non-linear model can outperform traditional tree-based approaches.
+
+**Role in the Project:**  
+- Tests the benefit of learned non-linear representations  
+- Compares deep learning capability against classical ML models  
+- Evaluates whether model complexity yields performance gains on this dataset
+
+---
+
+## 4.6 Why Multiple Models Are Used
+
+Using multiple machine learning models is essential for a reliable and unbiased evaluation.
+
+- Different models exhibit **different inductive biases**, meaning they learn different types of relationships from the same data.
+- According to the **No Free Lunch Theorem**, no single model is optimal for all problems.
+- Comparing multiple models helps:
+  - Avoid biased conclusions  
+  - Evaluate the stability and robustness of the feature set  
+  - Select the model best suited to the underlying data distribution  
+
+
