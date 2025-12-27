@@ -246,7 +246,7 @@ A Multi-Layer Perceptron (MLP) is used to evaluate whether a general non-linear 
 
 ---
 
-## 4.6 Why Multiple Models Are Used
+### 4.6 Why Multiple Models Are Used
 
 Using multiple machine learning models is essential for a reliable and unbiased evaluation.
 
